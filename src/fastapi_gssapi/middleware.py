@@ -9,7 +9,7 @@ from starlette.datastructures import Headers, MutableHeaders
 from starlette.responses import Response
 
 
-class GSSAPIMiddleWare:
+class GSSAPIMiddleware:
     def __init__(self, app: ASGIApp, *, spn: Union[str, Name, None] = None) -> None:
         if isinstance(spn, str):
             spn = Name(spn)
