@@ -9,7 +9,7 @@ from k5test.realm import MITRealm
 
 from pydantic import BaseModel
 
-from fastapi_gssapi.dependency import GSSAPIAuth
+from fastapi_gssapi import GSSAPIAuth
 
 SECRET_KEY = "ff0d69562f59c8063554d63e190411ac7a78c1322c6cf5e864a6b7b0d9f756b7"
 ALGORITHM = "HS256"

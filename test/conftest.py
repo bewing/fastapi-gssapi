@@ -11,8 +11,8 @@ from gssapi.sec_contexts import SecurityContext
 from gssapi import raw as gb
 from k5test.realm import MITRealm
 
-from fastapi_gssapi.middleware import GSSAPIMiddleware
-from fastapi_gssapi.dependency import GSSAPIAuth
+from fastapi_gssapi import GSSAPIMiddleware
+from fastapi_gssapi import GSSAPIAuth
 
 
 @pytest.fixture(scope="session", autouse=True)

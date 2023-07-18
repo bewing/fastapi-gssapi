@@ -19,7 +19,7 @@ basic:
 
 ```python
 from fastapi import FastAPI
-from fastapi_gssapi.middleware import GSSAPIMiddleware
+from fastapi_gssapi import GSSAPIMiddleware
 app = FastAPI()
 app.add_middleware(GSSAPIMiddleware)
 ```
