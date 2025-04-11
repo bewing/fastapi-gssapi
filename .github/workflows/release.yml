@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release-build:
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: sudo apt update && sudo apt -y install python3-dev krb5-admin-server krb5-user krb5-kdc libkrb5-dev
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+    - name: Set up Python
+      run: uv python install
+    - name: Build
+      run: uv build --sdist --wheel
+    - name: Publish
+      uses: pypa/gh-action-pypi-publish@release/v1
+
