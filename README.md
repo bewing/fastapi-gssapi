@@ -6,7 +6,7 @@ to FastAPI
 
 Installation
 ============
-TBD on packaging
+Use your favorite package manager to install from PyPI
 
 Usage
 =====
@@ -26,4 +26,4 @@ app.add_middleware(GSSAPIMiddleware)
 
 Dependency
 ----------
-See the [example app](example/app.py)
+See the [example app](https://github.com/bewing/fastapi-gssapi/blob/main/example/app.py)

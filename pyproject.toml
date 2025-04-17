@@ -1,6 +1,6 @@
 [project]
 name = "fastapi-gssapi"
-version = "0.1.0"
+version = "0.1.1"
 description = "GSSAPI for FastAPI"
 authors = [{ name = "Brandon Ewing", email = "brandon.ewing@warningg.com" }]
 requires-python = "~=3.9"
@@ -10,6 +10,10 @@ dependencies = [
     "gssapi>=1.8.2,<2",
     "fastapi>=0.100.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/bewing/fastapi-gssapi"
+Issues = "https://github.com/bewing/fastapi-gssapi/issues"
 
 [dependency-groups]
 dev = [
